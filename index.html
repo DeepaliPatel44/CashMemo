@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accordion">
+        <h2>Bundle & Save</h2>
+
+        <div class="option">
+            <input type="radio" name="bundle" id="one-pair" value="195" data-discount="50" onclick="selectBundle(1, 195)">
+            <label for="one-pair">1 Pair - DKK 195.00 (50% OFF)</label>
+            <div class="details" id="details1">
+                <div class="selection-row">
+                    <div class="selection">
+                        <label>Size:</label>
+                        <select id="size1">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div class="selection">
+                        <label>Colour:</label>
+                        <select id="color1">
+                            <option>Select Color</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Yellow</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="option">
+            <!-- Most Popular label -->
+            <span class="most-popular">Most Popular</span>
+            <input type="radio" name="bundle" id="two-pair" value="345" data-discount="40" onclick="selectBundle(2, 345)">
+            <label for="two-pair">2 Pair - DKK 345.00 (40% OFF)</label>
+            <div class="details" id="details2">
+                <div class="selection-row">
+                    <div class="selection">
+                        <label>Size :</label>
+                        <select id="size2-2">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                        <select id="size2-2">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div class="selection">
+                        <label>Colour :</label>
+                        <select id="color2-2">
+                            <option>Select Color</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Yellow</option>
+                        </select>
+                        <select id="color2-2">
+                            <option>Select Color</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Yellow</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="option">
+            <input type="radio" name="bundle" id="three-pair" value="528" data-discount="60" onclick="selectBundle(3, 528)">
+            <label for="three-pair">3 Pair - DKK 528.00 (60% OFF)</label>
+            <div class="details" id="details3">
+                <div class="selection-row">
+                    <div class="selection">
+                        <label>Size:</label>
+                        <select id="size3">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                        <select id="size3">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                        <select id="size3">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                    <div class="selection">
+                        <label>Colour:</label>
+                        <select id="color3">
+                            <option>Select Color</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Yellow</option>
+                        </select>
+                        <select id="color2-2">
+                            <option>Select Color</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Yellow</option>
+                        </select>
+                        <select id="color2-2">
+                            <option>Select Color</option>
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Yellow</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <p class="free-shipping">Free 2 Day Shipping</p>
+            <p class="total">Total: <span id="total">DKK 0.00</span></p>
+        </div>
+
+        <button class="add-to-cart" onclick="addToCart()">+ Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
